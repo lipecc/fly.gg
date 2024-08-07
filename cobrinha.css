@@ -1,0 +1,110 @@
+body{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2700eb;
+  background-image: linear-gradient(160deg, #2d35a9 0%, #7288bb 100%);
+}
+
+  color:white;
+}
+
+.game{
+  display:flex; 
+}
+
+.game-area{
+  display:flex;
+  flex-direction: column;
+}
+
+.level{
+  list-style:none;
+  margin:0;
+  padding:20px;
+}
+
+.level li{
+  margin-bottom:10px;
+}
+
+.pontuacao{
+  background: #222222;
+  border-radius: 0 0 10px 10px;
+  margin:0px;
+  padding:20px;
+  list-style: none;
+  text-align: center;
+  font-weight: 900;
+}
+
+a{
+  color:white;
+}
+
+canvas{
+  border:3px solid #28262C;
+  border-radius:10px 10px 0 0;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width:100%;
+}
+
+button:hover,
+button:focus {
+    background: rgba(0,0,0,0.6);
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h::after {
+    content: '↑';
+}
+
+.a::after {
+    content: '←';
+}
+
+.s::after {
+    content: '↓';
+}
+
+.d::after {
+    content: '→';
+}
